@@ -1,0 +1,39 @@
+.slider {
+  overflow: hidden; /* Hides elements that fall outside the container */
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease; /* Smooth transition for slide movements */
+}
+
+.slides img {
+  width: 100%; /* Images take full width of the slide */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Styling for navigation buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Center buttons vertically */
+  font-size: 2em; /* Size of the arrow characters */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5em; /* Add some space around the arrows */
+}
+
+.prev {
+  left: 0; /* Position on the left */
+}
+
+.next {
+  right: 0; /* Position on the right */
+}
+
+/* Optional: Add styling for hover effects */
+.prev:hover, .next:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
